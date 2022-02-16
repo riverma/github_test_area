@@ -13,21 +13,23 @@ body:
     id: checked-duplicates
     attributes:
       label: Checked for duplicates
-      description: Have you already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) for duplicates?
+      description: Have you checked for duplicate issues in the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue)?
       multiple: false
       options:
-        - 'yes'
-        - 'no'
+        - "Yes - I've already checked"
+        - "No - I haven't checked"
     validations:
       required: yes
   - type: checkboxes
     id: checked-alternatives
     attributes:
       label: Alternatives considered
-      description: By submitting this issue, you confirm you've already considered alternative solutions to your need
+      description: Have you considered alternative solutions to your feature request?
       options:
-        - label: I confirm I've considered alternatives and determined they do not suffice
-          required: true
+        - "Yes - and they don't suffice"
+        - "No - I haven't"
+    validations:
+      required: yes
   - type: textarea
     id: feature-problem
     attributes:
