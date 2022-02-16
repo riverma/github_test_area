@@ -38,8 +38,8 @@ body:
   - type: textarea
     id: reproduction
     attributes:
-      label: Reproduction steps
-      description: "How do you trigger this bug? Please walk us through it step by step. Screenshots welcome."
+      label: Reproducible steps
+      description: "How would we reproduce this bug? Please walk us through it step by step. Screenshots welcome."
       value: |
         1.
         2.
