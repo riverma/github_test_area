@@ -2,8 +2,6 @@ name: New Feature
 description: Submit a new feature request
 title: "[New Feature]: "
 labels: ["enhancement", "needs triage"]
-assignees:
-  - riverma
 body:
   - type: markdown
     attributes:
@@ -13,7 +11,7 @@ body:
     id: checked-duplicates
     attributes:
       label: Checked for duplicates
-      description: Have you checked for duplicate issues in the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue)?
+      description: Have you checked for duplicate issues?
       multiple: false
       options:
         - "Yes - I've already checked"
@@ -26,8 +24,8 @@ body:
       label: Alternatives considered
       description: Have you considered alternative solutions to your feature request?
       options:
-        - "Yes - and they don't suffice"
-        - "No - I haven't"
+        - "Yes - and alternatives don't suffice"
+        - "No - I haven't considered"
     validations:
       required: yes
   - type: textarea
