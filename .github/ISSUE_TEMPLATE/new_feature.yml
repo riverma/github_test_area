@@ -20,7 +20,7 @@ body:
         - "No - I haven't checked"
     validations:
       required: yes
-  - type: checkboxes
+  - type: dropdown
     id: checked-alternatives
     attributes:
       label: Alternatives considered
