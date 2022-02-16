@@ -29,10 +29,10 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
-      label: What do you expect?
+      label: What did you expect?
       description: A clear and concise description of what you expect to happen
-      placeholder: Tell us what you want
-      value: "I expect [...]"
+      placeholder: Tell us what you expected
+      value: "I expected [...]"
     validations:
       required: true
   - type: textarea
