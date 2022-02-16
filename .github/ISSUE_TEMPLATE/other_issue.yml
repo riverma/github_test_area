@@ -1,5 +1,5 @@
-name: General Issue
-description: Submit a general issue request
+name: Other Issue
+description: Submit a general/other issue request
 labels: ["needs triage"]
 assignees:
   - riverma
