@@ -8,9 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-
-      
-
+        > _Thank you for filing a bug ticket. We very much appreciate your time._
   - type: checkboxes
     id: checked
     attributes:
