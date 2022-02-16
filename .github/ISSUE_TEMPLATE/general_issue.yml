@@ -1,6 +1,5 @@
 name: General Issue
 description: Submit a general issue request
-title: ""
 labels: ["needs triage"]
 assignees:
   - riverma
