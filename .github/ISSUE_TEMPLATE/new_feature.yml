@@ -16,8 +16,8 @@ body:
       description: Have you already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) for duplicates?
       multiple: false
       options:
-        - yes
-        - no
+        - 'yes'
+        - 'no'
     validations:
       required: yes
   - type: checkboxes
