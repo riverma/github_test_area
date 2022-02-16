@@ -8,17 +8,9 @@ body:
     id: checked-duplicates
     attributes:
       label: Checked for duplicates
-      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) and not found duplicates
+      description: By submitting this issue, you confirm this is not a bug or feature request and that you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) and not found duplicates
       options:
-        - label: I confirm this issue is new
-          required: true
-  - type: checkboxes
-    id: checked-not-bug-feature
-    attributes:
-      label: Not a bug or feature request
-      description: By submitting this issue, you confirm this ticket is not a bug or feature request but another type of issue or support issue for a bug or feature request
-      options:
-        - label: I confirm this is not a bug or feature request
+        - label: I confirm this issue is new and not a bug or feature request
           required: true
   - type: input
     id: support
