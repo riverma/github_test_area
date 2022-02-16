@@ -26,11 +26,20 @@ body:
         - label: I confirm I've considered alternatives and determined they do not suffice
           required: true
   - type: textarea
+    id: feature-problem
+    attributes:
+      label: Related problem
+      description: Is your feature request related to a problem? Please help us understand if so.
+      placeholder: Tell us the problem
+      value: "Ex. I'm frustrated when [...] happens"
+    validations:
+      required: false
+  - type: textarea
     id: feature-description
     attributes:
       label: Describe the feature request
       description: A clear and concise description of your request. 
       placeholder: Tell us what you want
-      value: "Ex. I'm frustrated when [...] and I need [...] to help"
+      value: "Ex. I need or want [...]"
     validations:
       required: true
