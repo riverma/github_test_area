@@ -13,7 +13,7 @@ body:
     id: checked
     attributes:
       label: Checked for duplicates
-      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) in this repository and not found duplicates
+      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) and not found duplicates
       options:
         - label: I confirm this bug is new
           required: true
