@@ -13,9 +13,9 @@ body:
     id: checked
     attributes:
       label: Checked for duplicates
-      description: By submitting this issue, you confirm you've already scanned the list of existing issues in this repository and not found duplicates
+      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) in this repository and not found duplicates
       options:
-        - label: I've checked existing issues 
+        - label: I confirm this bug is new
           required: true
   - type: textarea
     id: bug-description
@@ -29,17 +29,17 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
-      label: What did you expect?
+      label: What do you expect?
       description: A clear and concise description of what you expect to happen
       placeholder: Tell us what you want
-      value: "When I do XYZ action, I expect XYZ..."
+      value: "I expect XYZ..."
     validations:
       required: true
   - type: textarea
     id: reproduction
     attributes:
       label: Reproduction steps
-      description: "How do you trigger this bug? Please walk us through it step by step."
+      description: "How do you trigger this bug? Please walk us through it step by step. Screenshots welcome."
       value: |
         1.
         2.
@@ -50,7 +50,7 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: "Which environment did you experience this bug in?"
+      description: "What is your environment?"
       value: |
         - Version of this software [e.g. vX.Y.Z]
         - Operating System: [e.g. MacOSX with Docker Desktop vX.Y]
