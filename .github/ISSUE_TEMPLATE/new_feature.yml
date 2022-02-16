@@ -1,0 +1,36 @@
+name: New Feature
+description: Submit a new feature request
+title: "[New Feature]: "
+labels: ["enhancement", "needs triage"]
+assignees:
+  - riverma
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > _Thank you for filing a new feature request. We very much appreciate your time._
+  - type: checkboxes
+    id: checked-duplicates
+    attributes:
+      label: Checked for duplicates
+      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) and not found duplicates
+      options:
+        - label: I confirm this feature is new
+          required: true
+  - type: checkboxes
+    id: checked-alternatives
+    attributes:
+      label: Alternatives considered
+      description: By submitting this issue, you confirm you've already considered alternative solutions to your need
+      options:
+        - label: I confirm I've considered alternatives and determined they do not suffice
+          required: true
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Describe the feature request
+      description: A clear and concise description of your request. 
+      placeholder: Tell us what you want
+      value: "Ex. I'm frustrated when [...] and I need [...] to help"
+    validations:
+      required: true
