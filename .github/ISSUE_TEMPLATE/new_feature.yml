@@ -9,14 +9,17 @@ body:
     attributes:
       value: |
         > _Thank you for filing a new feature request. We very much appreciate your time._
-  - type: checkboxes
+  - type: dropdown
     id: checked-duplicates
     attributes:
       label: Checked for duplicates
-      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) and not found duplicates
+      description: Have you already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) for duplicates?
+      multiple: false
       options:
-        - label: I confirm this feature is new
-          required: true
+        - yes
+        - no
+    validations:
+      required: yes
   - type: checkboxes
     id: checked-alternatives
     attributes:
