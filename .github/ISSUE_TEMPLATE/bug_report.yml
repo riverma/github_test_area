@@ -7,19 +7,22 @@ body:
     attributes:
       value: |
         > _Thank you for filing a bug ticket. We very much appreciate your time._
-  - type: checkboxes
-    id: checked
+  - type: dropdown
+    id: checked-duplicates
     attributes:
       label: Checked for duplicates
-      description: By submitting this issue, you confirm you've already scanned the [list of existing issues](https://github.com/riverma/github_test_area/issues?q=is%3Aissue) and not found duplicates
+      description: Have you checked for duplicate issues?
+      multiple: false
       options:
-        - label: I confirm this bug is new
-          required: true
+        - "Yes - I've already checked"
+        - "No - I haven't checked"
+    validations:
+      required: yes
   - type: textarea
     id: bug-description
     attributes:
       label: Describe the bug
-      description: A clear and concise description of what the bug is. Screenshots welcome.
+      description: A clear and concise description of what the bug is. Plain-text snippets preferred but screenshots welcome.
       placeholder: Tell us what you saw
       value: "When I did [...] action, I noticed [...]"
     validations:
@@ -37,7 +40,7 @@ body:
     id: reproduction
     attributes:
       label: Reproducible steps
-      description: "How would we reproduce this bug? Please walk us through it step by step. Screenshots welcome."
+      description: "How would we reproduce this bug? Please walk us through it step by step. Plain-text snippets preferred but screenshots welcome."
       value: |
         1.
         2.
